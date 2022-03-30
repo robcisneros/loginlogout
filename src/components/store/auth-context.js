@@ -14,6 +14,9 @@ export const AuthContextProvider = (props) => {
     if (LSInfo === "1") {
       setIsLoggedIn(true);
     }
+    else{
+      setIsLoggedIn(false);
+    }
   }, []);
 
   const loginHandler = (email, password) => {
